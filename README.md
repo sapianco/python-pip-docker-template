@@ -13,6 +13,12 @@ Here is a simple repo template for python pip Docker Projects (Sapian Standar)
 - Metrics (Prometheus)
 - docker buildx (Multiarch)
 
+# using this template
+``` bash
+find . -type f -exec sed -i 's/python-pip-docker-template/new-name/g' {} \;
+find . -type f -exec sed -i 's/PYTHON_PIP_DOCKER_TEMPLATE/NEW_NAME/g' {} \;
+find . -type f -exec sed -i 's/python_pip_docker_template/new_name/g' {} \;
+```
 # Build And Push to docker registry
 
 ``` bash
