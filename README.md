@@ -4,6 +4,14 @@
 
 Here is a simple repo template for python pip Docker Projects (Sapian Standar)
 
+# Features
+
+1) Python
+2) Docker (Miocroservicios)
+3) pip (pipenv and pip setup)
+4) kubernetes (Helm Chart)
+5) Metrics (Prometheus)
+
 # Build And Push to docker registry
 
 ``` bash
