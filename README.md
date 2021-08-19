@@ -11,6 +11,7 @@ Here is a simple repo template for python pip Docker Projects (Sapian Standar)
 3) pip (pipenv and pip setup)
 4) kubernetes (Helm Chart)
 5) Metrics (Prometheus)
+6) docker buildx (Multiarch)
 
 # Build And Push to docker registry
 
