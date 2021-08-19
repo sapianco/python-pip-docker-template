@@ -15,9 +15,14 @@ Here is a simple repo template for python pip Docker Projects (Sapian Standar)
 
 # using this template
 ``` bash
-find . -type f -exec sed -i 's/python-pip-docker-template/new-name/g' {} \;
-find . -type f -exec sed -i 's/PYTHON_PIP_DOCKER_TEMPLATE/NEW_NAME/g' {} \;
-find . -type f -exec sed -i 's/python_pip_docker_template/new_name/g' {} \;
+new_project_name=new-name
+new_project_name_constant=$(echo ${new_project_name^^}| tr "-" "_")
+new_project_name_snake=$(echo ${new_project_name}| tr "-" "_")
+find . -type f -exec sed -i "s/python-pip-docker-template/${new_project_name}/g" {} \;
+find . -type f -exec sed -i "s/PYTHON_PIP_DOCKER_TEMPLATE/${new_project_name_constant}/g" {} \;
+find . -type f -exec sed -i "s/python_pip_docker_template/${new_project_name_snake}/g" {} \;
+mv python-pip-docker-template/python-pip-docker-template python-pip-docker-template/${new_project_name}
+mv python-pip-docker-template ${new_project_name}
 ```
 # Build And Push to docker registry
 
