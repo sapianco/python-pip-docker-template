@@ -1,2 +1,2 @@
 # python-pip-docker-template
-Template for python pip Docker Proyects
+Template for python pip Docker Projects
